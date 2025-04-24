@@ -28,7 +28,6 @@ func Create(name string) error {
 		"cmd",
 		"internal",
 		"pkg",
-		// "api",
 		"config",
 		"build",
 	}

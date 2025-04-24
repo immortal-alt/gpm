@@ -1,2 +1,2 @@
-./gpm
-.vscodes
+.vscode
+*.out
