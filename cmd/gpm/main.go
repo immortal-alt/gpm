@@ -34,12 +34,16 @@ func main() {
 }
 
 func printHelp() {
-	fmt.Println("Go Project Manager (goproj)")
-	fmt.Println("Usage:")
-	fmt.Println("  gpm init <project-name>   - Create a new Go project")
-	fmt.Println("  gpm build                - Build the project")
-	fmt.Println("  gpm run                  - Run the project")
-	fmt.Println("  gpm dep add <pkg>        - Add a dependency")
-	fmt.Println("  gpm dep remove <pkg>     - Remove a dependency")
-	fmt.Println("  gpm clean                - Clean build artifacts")
+	puts("Go Project Manager (goproj)")
+	puts("Usage:")
+	puts("  gpm init <project-name>  - Create a new Go project")
+	puts("  gpm build                - Build the project")
+	puts("  gpm run                  - Run the project")
+	puts("  gpm dep add <pkg>        - Add a dependency")
+	puts("  gpm dep remove <pkg>     - Remove a dependency")
+	puts("  gpm clean                - Clean build artifacts")
+}
+
+var puts = func(args ...string) {
+	fmt.Println(args)
 }

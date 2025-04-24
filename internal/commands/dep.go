@@ -8,7 +8,7 @@ import (
 
 func ManageDependencies(args []string) {
 	if len(args) < 2 {
-		fmt.Println("Usage: goproj dep [add|remove] <package>")
+		fmt.Println("Usage: gpm dep [add|remove] <package>")
 		return
 	}
 
